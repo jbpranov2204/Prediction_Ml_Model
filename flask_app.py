@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the trained model
-with open('Model.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     loaded_pipeline = pickle.load(file)
 
 # Define a route for predictions
